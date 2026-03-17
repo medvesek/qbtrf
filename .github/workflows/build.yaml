@@ -23,8 +23,8 @@ jobs:
           options: --onefile
 
       - name: Create Release
-        if: github.ref_type == 'tag'
         uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
         with:
           files: ./dist/qbtrf.exe
         env:
