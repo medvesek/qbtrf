@@ -28,12 +28,12 @@ def registryEntriesForOpenWith():
   progId = "qbtrf.torrent"
   return [
     {
-      "key": rf'Software\Classes\{progId}\shell\open\command',
+      "key": rf"Software\Classes\{progId}\shell\open\command",
       "valueName": "",
       "value": getExecCommand(),
     },
     {
-      "key": r'Software\Classes\.torrent\OpenWithProgids',
+      "key": r"Software\Classes\.torrent\OpenWithProgids",
       "valueName": progId,
       "value": "",
     }
@@ -42,12 +42,12 @@ def registryEntriesForOpenWith():
 def registryEntriesForMagnetLinks():
   return [
     {
-      "key": r"Software\Classes\magnet'",
+      "key": r"Software\Classes\magnet",
       "valueName": "URL Protocol",
       "value": "",
     },
     {
-      "key": r'Software\Classes\magnet\shell\open\command',
+      "key": r"Software\Classes\magnet\shell\open\command",
       "valueName": "",
       "value": getExecCommand()
     }
